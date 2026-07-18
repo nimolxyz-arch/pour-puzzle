@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pour — a daily zen puzzle</title>
+<meta name="description" content="Pour is a water sort puzzle made calm, by tinydot studio. Support and privacy policy.">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --ink: #201C29;
+  --ink-soft: #6B6577;
+  --line: #E9E4DC;
+  --coral: #D9502F;
+  --card: #FBF9F6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17141D;
+    --ink: #F1ECE4;
+    --ink-soft: #A79FB0;
+    --line: #322C3D;
+    --coral: #FF8163;
+    --card: #1E1A26;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17141D; --ink: #F1ECE4; --ink-soft: #A79FB0;
+  --line: #322C3D; --coral: #FF8163; --card: #1E1A26;
+}
+:root[data-theme="light"] {
+  --bg: #FFFFFF; --ink: #201C29; --ink-soft: #6B6577;
+  --line: #E9E4DC; --coral: #D9502F; --card: #FBF9F6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex; align-items: center; justify-content: center;
+}
+.card {
+  width: 100%; max-width: 460px; margin: 24px; padding: 48px 40px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+  text-align: center;
+}
+.brand {
+  display: inline-flex; align-items: baseline; gap: 2px;
+  font-size: 14px; font-weight: 700; letter-spacing: -0.01em;
+  color: var(--ink-soft); text-transform: lowercase; margin-bottom: 22px;
+}
+.brand .dot { color: var(--coral); font-size: 20px; line-height: 0; }
+
+h1 {
+  font-size: 30px; font-weight: 800; letter-spacing: -0.015em; margin: 0 0 8px;
+}
+.tagline {
+  font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-soft); margin: 0 0 26px;
+}
+.tagline .sep { color: var(--coral); padding: 0 8px; }
+
+.bottle-row { display: flex; justify-content: center; gap: 10px; margin: 0 0 28px; }
+.bottle {
+  width: 16px; height: 40px; border-radius: 8px 8px 3px 3px;
+  border: 1.5px solid var(--line); position: relative; overflow: hidden;
+  background: transparent;
+}
+.bottle span { position: absolute; left: 0; right: 0; bottom: 0; }
+.b1 span { height: 65%; background: #E8734F; }
+.b2 span { height: 80%; background: #4FA6E8; }
+.b3 span { height: 45%; background: #E8C24F; }
+.b4 span { height: 92%; background: #6FBF8B; }
+
+p.lede { font-size: 16px; line-height: 1.6; margin: 0 0 8px; text-wrap: balance; }
+p.avail { font-size: 14px; color: var(--ink-soft); margin: 0 0 30px; }
+
+.links { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; }
+a { color: var(--coral); text-decoration: none; border-bottom: 1px solid currentColor; }
+a:hover { opacity: 0.75; }
+
+footer { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line);
+  font-size: 13px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <span class="brand">tinydot<span class="dot">·</span>studio</span>
+
+  <h1>Pour</h1>
+  <p class="tagline">sort<span class="sep">·</span>pour<span class="sep">·</span>settle</p>
+
+  <div class="bottle-row" aria-hidden="true">
+    <div class="bottle b1"><span></span></div>
+    <div class="bottle b2"><span></span></div>
+    <div class="bottle b3"><span></span></div>
+    <div class="bottle b4"><span></span></div>
+  </div>
+
+  <p class="lede">A water sort puzzle made calm — pour each color, gather every hue into its own glass, find a quiet moment.</p>
+  <p class="avail">Available for Android and iOS.</p>
+
+  <div class="links">
+    <div><strong>Support:</strong> <a href="mailto:nimolxyz@gmail.com">nimolxyz@gmail.com</a></div>
+    <div><a href="privacy-policy.html">Privacy Policy</a></div>
+  </div>
+
+  <footer>made quietly by tinydot studio</footer>
+
+</div>
+</body>
+</html>
